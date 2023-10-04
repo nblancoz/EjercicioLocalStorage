@@ -6,9 +6,6 @@ const msj = document.getElementById("msj");
 let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
 const miParrafo = document.getElementById("miParrafo");
 
-btn.addEventListener("click", saveContacts)
-btn2.addEventListener("click", del)
-
 function saveContacts(e) {
     e.preventDefault();
     miParrafo.innerHTML = "";
@@ -36,3 +33,6 @@ function del(e) {
 };
 let contactsSaved = JSON.parse(localStorage.getItem("contacts"));
 console.log(contactsSaved);
+
+btn.addEventListener("click", saveContacts)
+btn2.addEventListener("click", del)
